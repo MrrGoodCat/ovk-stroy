@@ -1,4 +1,4 @@
-@import "fonts"
+@import "_fonts.sass"
 @import "libs"
 @import "vars"
 
@@ -38,17 +38,61 @@ html, body
 	height: 100%
 
 body
-	font-size: 16px
+	font-size: 14px
 	min-width: 320px
 	position: relative
-	line-height: 1.65
+	line-height: 1.6
 	font-family: $default-font
 	overflow-x: hidden
+	color: #222
 	opacity: 1
 
-.img-responsive
+h1, h2, h3, h4, h5, h6
+	font-family: "OpenSansLight", sans-serif
+	font-weight: normal
+
+h1
+	font-size: em(43px)
+
+h2
+	font-size: em(34px)
+
+h3, h4
+	font-family: "OpenSansSemiBold", sans-serif
+	text-transform: uppercase
+	font-size: em(17px)
+
+h4
+	font-size: em(15px)
+
+.hidden
+	display: none
+
+// header start
+
+.main-head
+	background-image: url("../img/bg_top.jpg")
+	background-size: cover
+	background-position: top center
+	min-height: 100vh
+
+.mnu-line
+	padding-top: 48px
+
+.logo
 	display: block
-	max-width: 100%
-	height: auto
+	width: 100px
+	img
+		width: 100%
+
+nav
+	ul
+		list-style-type: none
+		padding: 0
+		margin: 0
+	li
+		display: inline-block
+
+// header end
 
 @import "media" // Всегда в конце
