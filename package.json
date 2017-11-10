@@ -9,6 +9,7 @@
   "author": "WebDesign Master",
   "license": "ISC",
   "devDependencies": {
+    "bourbon": "^4.3.4",
     "browser-sync": "^2.18.13",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
